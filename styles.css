@@ -1,0 +1,251 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Microsoft Yahei, "微软雅黑", "Helvetica Neue", Helvetica, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+html, body {
+    background: #EBEDEF;
+    weight: 100%;
+}
+a {
+    text-decoration: none;
+}
+a:focus {  /* firefox */
+    outline: none;  
+} 
+img {border: none;}
+.hidden {display: none;}
+
+
+
+
+
+
+/* 页面主容器 */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 栅格系统 */
+.mk-item-box {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.mk-item-box:before,.mk-item-box:after {
+    content: " ";
+    display: table;
+}
+.mk-item-box:after {
+    clear: both;
+}
+.mk-item {
+    width: 25%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+/* 响应式优化 */
+@media screen and (max-width: 1150px) {
+    .container {
+        width: 950px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 750px;
+    }
+    .mk-item {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+        padding-left:30px;
+        padding-right: 30px;
+    }
+    
+    .welcome>p {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container {
+        padding-left:15px;
+        padding-right: 15px;
+    }
+    .mk-item {
+        width: 100%;
+    }
+}
+
+/* 分类大块 */
+.section {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+/* 子标题 */
+.mk-sub-title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 26px;
+    margin: 50px 0 13px 0;
+}
+.mk-sub-title>span {
+    font-family: Segoe UI Light,Microsoft YaHei,Arial,Helvetica,sans-serif;
+    margin-right: 10px;
+}
+.mk-title-describe {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/* 彩色块，样式来自 alloyteam(http://www.alloyteam.com/) */
+.mk-color-item {
+    font-family: microsoft yahei;
+    background-color: #70c3ff;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    margin-bottom: 25px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.mk-color-item:hover {
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .5);
+    -webkit-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .5);
+    -moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .5)
+}
+
+.mk-color-item.color1 {
+    background-color: #0080FF!important;
+}
+.mk-color-item.color2 {
+    background-color: #fd6a7f!important;
+}
+.mk-color-item.color3 {
+    background-color: #FF8000!important;
+}
+.mk-color-item.color4 {
+    background-color: #89d04f!important;
+}
+.mk-color-item.color5 {
+    background-color: #636cc4!important;
+}
+.mk-color-item.color6 {
+    background-color: #0DCAF0!important;
+}
+.mk-color-item.color7 {
+    background-color: #697988!important;
+}
+
+.mk-color-item>p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.mk-color-item>.item-logo {
+    height: 60px;
+    overflow: hidden;
+    display: inline-block
+}
+.mk-color-item>.item-logo>img {
+    height: 100%
+}
+
+.mk-color-item>.item-logo>.fa {
+    font-size: 60px; 
+    line-height: 60px;
+}
+
+.mk-color-item>h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.mk-color-item>.light {
+    cursor: pointer;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(0deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.5),hsla(0,0%,100%,0));
+    transform: skewx(-25deg);
+    -o-transform: skewx(-25deg);
+    -moz-transform: skewx(-25deg);
+    -webkit-transform: skewx(-25deg);
+}
+.mk-color-item:hover>.light {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    left: 100%
+}
+
+/* 大标题 */
+.mk-big-title {
+    text-align: center;
+}
+.mk-big-title>h4 {
+    font-size: 50px;
+    display: inline-block;
+    /*background: #eee url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAHklEQVQImWNkYGBgYGD4//8/A5wF5SBYyAr+//8PAPOCFO0Q2zq7AAAAAElFTkSuQmCC) repeat;  */
+    /*text-shadow: 5px -5px black, 4px -4px white;  */
+    /*font-weight: bold;  */
+    /*-webkit-text-fill-color: transparent;  */
+    /*-webkit-background-clip: text;*/
+    position: relative;
+    margin-bottom: 10px
+}
+/* 只有chrome才能享用的特效…… */
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    .mk-big-title>h4 {
+        background: #eee url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAHklEQVQImWNkYGBgYGD4//8/A5wF5SBYyAr+//8PAPOCFO0Q2zq7AAAAAElFTkSuQmCC) repeat;  
+        text-shadow: 5px -5px black, 4px -4px white;  
+        font-weight: bold;  
+        -webkit-text-fill-color: transparent;  
+        -webkit-background-clip: text;
+    }
+}
+
+.about-content>p {
+    text-indent: 2em;
+    line-height: 25px;
+    margin-bottom: 10px;
+    color: #2d2d2d;
+}
+.about-content>p>a {
+    color: #44a1a7;
+}
+.about-content>p>a:hover {
+    text-decoration: underline;
+}
+
+
+

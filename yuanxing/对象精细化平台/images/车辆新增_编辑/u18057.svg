@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1 0 0 1 -734 -38 )">
+    <path d="M 746.5 38  C 753.5 38  759 43.5  759 50.5  C 759 57.5  753.5 63  746.5 63  C 739.5 63  734 57.5  734 50.5  C 734 43.5  739.5 38  746.5 38  Z " fill-rule="nonzero" fill="#0052d9" stroke="none" fill-opacity="0" />
+    <path d="M 746.5 38.5  C 753.22 38.5  758.5 43.78  758.5 50.5  C 758.5 57.22  753.22 62.5  746.5 62.5  C 739.78 62.5  734.5 57.22  734.5 50.5  C 734.5 43.78  739.78 38.5  746.5 38.5  Z " stroke-width="1" stroke="#999999" fill="none" />
+  </g>
+</svg>
